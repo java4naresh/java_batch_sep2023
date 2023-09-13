@@ -1,7 +1,7 @@
 class LogicalOperators
 {
 	public static void main(String[] args) {
-	int num1 = 5;
+	/*int num1 = 5;
     int num2 = 7;
     int num3 = 10;
     boolean result = num1 < num2;//true
@@ -15,6 +15,10 @@ class LogicalOperators
     boolean evenStatus = result && result2;
 	System.out.println("Even status = "+ evenStatus);
 	boolean requirementsStatus = result3 && evenStatus;
-    System.out.println("Final Result = "+ requirementsStatus);
+    System.out.println("Final Result = "+ requirementsStatus);*/
+	int num = 10;
+    boolean result = num++ % 2 == 0 && ++num%2 != 0;//11
+	System.out.println(result);
+    System.out.println(num);
 	}
 }

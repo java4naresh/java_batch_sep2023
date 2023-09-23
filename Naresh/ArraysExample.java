@@ -41,7 +41,45 @@ class ArraysExample
 		}
         System.out.println(sum);
 
-		int number4 = {2,5,6,8,9};
+		int[] number = {2,5,6,8,9,10};
+		int check = 8;
+		String status = "Absent";
+		for(int i=0; i<number.length; i++) {
+		if(number[i] == check) {
+		status = "Present";
+		break;
+		}
+		}
+        System.out.println(status);
+
+		int[] numbers4 = {4,5,1,20,9,8,2,10,16,15};//60
+
+        sum=0;
+		for(int i=0; i<numbers4.length; i++) {
+		if(numbers4[i]%2==0) {
+		sum = sum+numbers4[i];
+		}
+		}
+		System.out.println(sum);
+
+		int[] numbers5 = {8,9,2,1,3,5,6,7};//{1,2,3,5,6,7,8,9}
+		//{2,9,8,1,3,5,6,7}
+		//{1,9,8,2,3,5,6,7}
+        //{1,8,9,2,3,5,6,7}
+		//{1,2,9,8,3,5,6,7}
+        //{1,2,8,9,3,5,6,7}
+        //{1,2,3,9,8,5,6,7}
+		System.out.println(Arrays.toString(numbers5));
+		for(int i=0;i<numbers5.length;i++) {//0<8
+		for(int j=i+1;j<numbers5.length;j++) {//3<8
+		if(numbers5[i]>numbers5[j]) {//numbers5[0]>numbers5[3] 2>1
+		int temp = numbers5[i];
+        numbers5[i] = numbers5[j];
+        numbers5[j] = temp;
+		}
+		}
+		}
+        System.out.println(Arrays.toString(numbers5));
 		
 }
 }

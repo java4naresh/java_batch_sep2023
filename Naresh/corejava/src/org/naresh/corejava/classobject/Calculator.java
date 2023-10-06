@@ -2,6 +2,21 @@ package org.naresh.corejava.classobject;
 
 public class Calculator {
 	
+	String name;
+	
+	public Calculator() {
+		
+	}
+	
+	public Calculator(String name) {
+		this.name = name;
+	}
+	
+	public void squart(double number) {
+		double sqrtValue = Math.sqrt(number);
+		System.out.println(sqrtValue+" calculated by "+ name);
+	}
+	
 	public static int sum(int num1, int num2) {
 		return num1+num2;
 	}

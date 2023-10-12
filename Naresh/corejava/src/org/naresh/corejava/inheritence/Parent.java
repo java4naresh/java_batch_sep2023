@@ -12,7 +12,7 @@ public class Parent {
 	
 	
 	
-	public Parent(String surName, String healthIssues, String properties, int houses) {
+    public Parent(String surName, String healthIssues, String properties, int houses) {
 		this.surName = surName;
 		this.healthIssues = healthIssues;
 		this.properties = properties;
@@ -20,7 +20,7 @@ public class Parent {
 	}
 	
 	public Parent() {
-		
+		System.out.println("parent");
 	}
 
 	public void eatingHabits(String habits) {

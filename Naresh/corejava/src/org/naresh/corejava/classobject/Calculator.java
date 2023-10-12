@@ -17,6 +17,21 @@ public class Calculator {
 		System.out.println(sqrtValue+" calculated by "+ name);
 	}
 	
+	protected void protectedSquart(double number) {
+		double sqrtValue = Math.sqrt(number);
+		System.out.println(sqrtValue+" calculated by "+ name);
+	}
+	
+	void defaultSquart(double number) {
+		double sqrtValue = Math.sqrt(number);
+		System.out.println(sqrtValue+" calculated by "+ name);
+	}
+	
+	private void privateSquart(double number) {
+		double sqrtValue = Math.sqrt(number);
+		System.out.println(sqrtValue+" calculated by "+ name);
+	}
+	
 	public static int sum(int num1, int num2) {
 		return num1+num2;
 	}
@@ -39,8 +54,9 @@ public class Calculator {
 	}
 	
 	public static void main(String[] args) {
-		//Calculator c = new Calculator();
-		//c.sum(10, 20);
+		Calculator c = new Calculator();
+		c.sum(10, 20);
+		c.privateSquart(16.0);
 		System.out.println(Calculator.sumOfMyChoice(10,20,30,40,50));
 		System.out.println(Calculator.mulOfMyChoice(1,2,3,4,5));
 	}

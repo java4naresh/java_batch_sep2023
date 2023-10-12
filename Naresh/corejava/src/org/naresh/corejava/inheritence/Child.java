@@ -8,6 +8,7 @@ public class Child extends Parent {
 	
 	public Child(String surName, String healthIssues, String properties, int houses,
 			String extraSkils, String education) {
+		super();
 		this.surName = surName;
 		this.healthIssues = healthIssues;
 		this.properties = properties;
@@ -23,7 +24,7 @@ public class Child extends Parent {
 	public void cellPhoneUsage(int hours) {
 		System.out.println("cell phone usage is "+ hours + "hours");
 	}  
-	
+
 	public void lateNightSpending(int time) {
 		System.out.println("Late night spent time is "+ time + " hours");
 	}

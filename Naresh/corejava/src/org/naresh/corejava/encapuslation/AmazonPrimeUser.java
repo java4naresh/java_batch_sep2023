@@ -26,6 +26,10 @@ public class AmazonPrimeUser {
 		this.password = password;
 	}
 	
+	public int hashCode() {
+		return userName.length() + password.length();
+	}
+	
 	public boolean equals(AmazonPrimeUser user) {
 		if(this.userName.equals(user.getUserName()) && this.password.equals(user.getPassword()))
 			return true;

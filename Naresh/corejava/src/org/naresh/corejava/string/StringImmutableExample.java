@@ -1,5 +1,7 @@
 package org.naresh.corejava.string;
 
+import java.util.Arrays;
+
 public class StringImmutableExample {
 
 	public static void main(String[] args) {
@@ -31,6 +33,22 @@ public class StringImmutableExample {
         System.out.println(name3.startsWith("Naresh"));
         System.out.println(name.indexOf('N'));
         System.out.println(name.lastIndexOf('N'));
+        
+        String names = "Naresh,Nikita,Pavan,Surya";
+        String[] convertedArray = names.split(",");
+        System.out.println(Arrays.toString(convertedArray));
+        String paragraph = "My Name is Naresh";
+        String substring = paragraph.substring(11, 17);
+        System.out.println(substring);
+        
+        //regex
+        String word = "ad10";
+        //it will check given string contain starting numbers and following characters or not
+        System.out.println(word.matches("[0-9]+[a-z]+"));
+        String email = "java4naresh@gmail.com";
+        //email validation
+        System.out.println(email.matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[a-z]{2,6}"));
+        
 	}
 
 }

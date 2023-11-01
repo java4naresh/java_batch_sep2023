@@ -22,7 +22,7 @@ public class ExceptionHandlingDemo {
 	
 	private static void checkEmailFormat(String email) {
 		if(!email.matches("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[a-z]{2,6}"))
-			throw new RuntimeException("Email is not correct");
+			throw new InvalidEmailException("Email is not correct");
 		
 	}
 

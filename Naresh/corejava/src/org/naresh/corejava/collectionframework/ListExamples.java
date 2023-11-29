@@ -10,7 +10,7 @@ import java.util.Vector;
 public class ListExamples {
 	
 	public static void main(String[] args) {
-		genericVector();
+		genericArrayList();
 		
 	}
 	
@@ -77,12 +77,16 @@ public class ListExamples {
 		al.add(7);
 		al.add(2);
 		System.out.println(al);
-		Collections.sort(al);
+		/*Collections.sort(al);
 		System.out.println(al);
 		System.out.println(al.isEmpty());
 		System.out.println(al.contains(15));
-		al.clear();
+		al.clear();*/
+		//al.remove(1);
+		al.add(1, 5);
 		System.out.println(al);
+		
+		System.out.println(10 >> 1);
 	}
 	
 	public static void arrayListExample() {

@@ -10,7 +10,37 @@ import java.util.Vector;
 public class ListExamples {
 	
 	public static void main(String[] args) {
-		genericArrayList();
+		customObject();
+		
+	}
+	
+	public static void customObject() {
+		/*Order order1 = new Order(1, "Mobile", 1);
+		Order order2 = new Order(2, "Chair", 2);
+		Order order3 = new Order(3, "Shoes", 4);
+		Order order4 = new Order(4, "Sun Glasses", 5);
+		Order order5 = new Order(5, "Jeans", 1);
+		List<Order> orders = new ArrayList<>();
+		orders.add(order1);
+		orders.add(order2);
+		orders.add(order3);
+		orders.add(order4);
+		orders.add(order5);
+		orders.add(order2);
+		System.out.println(orders);
+		//orders.remove(1);
+		orders.remove(order2);
+		System.out.println(orders);*/
+		List<Order> orders = new Vector<>();
+		orders.add(new Order(1, "Mobile", 1));
+		orders.add(new Order(2, "Chair", 2));
+		orders.add(new Order(3, "Shoes", 4));
+		orders.add(new Order(4, "Sun Glasses", 5));
+		orders.add(new Order(5, "Jeans", 1));
+		System.out.println(orders);
+		//orders.remove(1);
+		orders.remove(new Order(2, "Chair", 2));
+		System.out.println(orders);
 		
 	}
 	

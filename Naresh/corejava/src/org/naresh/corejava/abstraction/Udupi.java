@@ -44,5 +44,11 @@ public class Udupi implements Hotel {
 		System.out.println("minupa pappu 50%");
 		System.out.println("dosa ready");
 	}
+	
+	public void udipiSecailIdly() {
+		System.out.println("idly ravva 50%");
+		System.out.println("minupa pappu 50%");
+		System.out.println("Idly ready");
+	}
 
 }

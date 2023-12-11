@@ -3,15 +3,35 @@ package org.naresh.corejava.collectionframework;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Vector;
 
 public class ListExamples {
 	
 	public static void main(String[] args) {
-		customObject();
+		listIteratorExample();
 		
+	}
+	
+	public static void listIteratorExample() {
+		LinkedList<String> names = new LinkedList<>();
+		names.add("Rohit");
+		names.add("Kohli");
+		names.add("Gill");
+		names.add("Rahul");
+		names.add("Shreyas");
+		
+		ListIterator<String> listItr = names.listIterator();
+		while(listItr.hasNext()) {
+			System.out.print(listItr.next()+", ");
+		}
+		System.out.println();
+		while(listItr.hasPrevious()) {
+			System.out.print(listItr.previous()+ ", ");
+		}
 	}
 	
 	public static void customObject() {
@@ -97,6 +117,13 @@ public class ListExamples {
 		System.out.println(names.getLast());
 		System.out.println(names.size());
 		System.out.println(names.indexOf("Naresh"));
+		Iterator<String> namesItr = names.iterator();
+		
+		while(namesItr.hasNext()) {
+			String name = namesItr.next();
+			System.out.println(name);
+		}
+		
 	}
 	
 	public static void genericArrayList() {

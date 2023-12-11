@@ -1,6 +1,7 @@
 package org.naresh.corejava.collectionframework;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -30,6 +31,13 @@ public class SetExamples {
 		customers.add(new Customer(0, "Naresh"));
 		customers.add(new Customer(9, "Nikita"));
 		System.out.println(customers);
+		Iterator<Customer> itr = customers.iterator();
+		
+		while(itr.hasNext()) {
+			Customer name = itr.next();
+			System.out.println(name);
+		}
+		
 	}
 	
 	public static void treeSetExample() {
